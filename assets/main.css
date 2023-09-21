@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Apercupro';
+    font-weight: 300;
+    font-style: normal;
+    src: url('~/assets/fonts/apercupro-regular.woff2') format('woff2'),
+}
+
+* {
+    font-family: Whyte,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Helvetica,Arial,sans-serif;
+}

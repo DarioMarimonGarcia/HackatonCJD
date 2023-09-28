@@ -1,9 +1,28 @@
-<main class="about-bsk">
-    <section>
+<div class="about-bsk">
+    <section @click="onShowMore">
         <img
           class="about-bsk__main-image"
           src="https://static.bershka.net/4/static/images/home/2023/0915/chica/M_slide_woman_accessories_-1.jpg?20230921020706"
+          :class="{
+              'about-bsk__main-image--not-visible': isMouseEnter
+          }"
         >
-        <h2>LA MARCA</h2>
+        <transition name="title">
+        <h2
+          v-if="!isMouseEnter"
+          class="about-bsk__title"
+        >
+            VER MAS
+        </h2>
+        </transition>
+        <div class="about-bsk__slogan">
+            <transition name="slogan">
+                <p
+                  v-if="isMouseEnter"
+                >
+                    {{ info }}
+                </p>
+            </transition>
+        </div>
     </section>
-</main>
+</div>

@@ -1,12 +1,12 @@
 <script setup>
-import Topbar from '@/components/Topbar/index.vue'
+import { ref } from 'vue';
+import Topbar from '@/components/Topbar/index.vue';
 import AboutBershka from '@/components/AboutBershka/Mobile';
-import { ref } from 'vue'
+import Marquee from '@/components/Marquee/index.vue';
 
 const sectionSelectedIdx = ref(-1);
 
 function onSectionSelected (idx) {
-    debugger;
     const refKey = `about-bershka-${sectionSelectedIdx.value}`;
     sectionSelectedIdx.value = idx;
     if (sectionSelectedIdx.value === -1) {
@@ -43,6 +43,10 @@ function onSectionSelected (idx) {
             id="about-bershka-2"
             v-if="sectionSelectedIdx === -1 || sectionSelectedIdx === 2"
             @sectionShow="onSectionSelected"
+        />
+        <marquee
+            :text="'BSK'"
+            :isDark="true"
         />
     </div>
 </template>

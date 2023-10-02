@@ -7,6 +7,10 @@ export default {
         info: {
             type: String,
             required: true
+        },
+        title: {
+            type: String,
+            required: true
         }
     },
     setup(props) {

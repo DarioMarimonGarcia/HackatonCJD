@@ -1,0 +1,20 @@
+{
+    "alphabetOrder": [
+        {
+            "letter": "A",
+            "locations": [
+                "Albania - Tirana",
+                "Andorra - Andorra la Vella",
+                "Austria - Vienna"
+            ]
+        },
+        {
+            "letter": "B",
+            "locations": [
+                "Bahrein - Salmaniya",
+                "Belgium/Luxembourg - Brussels",
+                "Bulgaria - Sofia"
+            ]
+        }
+    ]
+}

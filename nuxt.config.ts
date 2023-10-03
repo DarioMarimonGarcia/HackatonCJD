@@ -3,5 +3,8 @@ export default defineNuxtConfig({
   css: ['@/assets/main.css'],
   devtools: { enabled: true },
   typescript: { shim: false }, // Chao typescript,
-  pages: true
+  pages: true,
+  plugins: [
+    '~/plugins/vue-observe-visibility.client.js'
+  ],
 })

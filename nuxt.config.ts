@@ -5,6 +5,6 @@ export default defineNuxtConfig({
   typescript: { shim: false }, // Chao typescript,
   pages: true,
   plugins: [
-    '~/plugins/vue-observe-visibility.client.js'
+      '~/plugins/vue-observe-visibility.js'
   ],
 })

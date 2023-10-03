@@ -1,7 +1,7 @@
 <div class="about-bsk"  @click="onShowMore">
     <img
       class="about-bsk__main-image"
-      src="https://static.bershka.net/4/static/images/home/2023/0915/chica/M_slide_woman_accessories_-1.jpg?20230921020706"
+      :src="image"
       :class="{
           'about-bsk__main-image--not-visible': isMouseEnter
       }"
@@ -20,10 +20,27 @@
         </transition>
     </div>
     <transition name="slogan">
-        <div v-if="isMouseEnter" class="about-bsk__slogan">
-                <p>
-                    {{ info }}
-                </p>
+        <div v-if="isMouseEnter"
+             class="about-bsk__slogan"
+             :class="{
+                'about-bsk__slogan--visible': isMouseEnter
+             }"
+        >
+            <span
+               v-if="slogan"
+               class="about-bsk__slogan-title"
+            >
+                "{{ slogan }}"
+            </span>
+            <p class="about-bsk__main-info">
+                {{ mainInfo }}
+            </p>
+            <p
+              v-if="info"
+              class="about-bsk__info"
+            >
+                {{ info }}
+            </p>
         </div>
     </transition>
 </div>

@@ -4,57 +4,45 @@ import Topbar from '@/components/Topbar/index.vue';
 import AboutBershka from '~/components/AboutBershkaCard/Mobile';
 import Marquee from '@/components/Marquee/index.vue';
 
-const sectionSelectedIdx = ref(-1);
+const sections = ref([]);
 const isMainContentVisible = ref(true);
 
-function onSectionSelected (idx) {
-    console.log(idx);
-    const refKey = `about-bershka-${sectionSelectedIdx.value}`;
-    sectionSelectedIdx.value = idx;
-    if (sectionSelectedIdx.value === -1) {
-        const element = document.getElementById(refKey);
-        if (element) {
-            nextTick(() => {
-                element.scrollIntoView();
-            });
+const { data: aboutBskInfo, pending } = await useAsyncData('info', async () =>
+    await $fetch('/api/aboutBskInfo')
+);
+function visibilityChange (isVisible) {
+    isMainContentVisible.value = isVisible
+}
+
+function onSectionShow (key) {
+    for (const section of sections.value) {
+        const aux = JSON.parse(JSON.stringify(section));
+        if (aux.sectionKey !== key) {
+            section.onReset();
         }
     }
 }
 
-function visibilityChange (isVisible) {
-    isMainContentVisible.value = isVisible
-}
 </script>
 <template>
     <div class="about-bsk-page">
         <topbar :isSolid="!isMainContentVisible"/>
-        <section class="main-content" v-observe-visibility="visibilityChange">
+        <section
+            class="main-content"
+            v-observe-visibility="visibilityChange"
+            v-if="!pending">
             <about-bershka
-                id="about-bershka-0"
-                :index="0"
-                :info="'LA MARCA LA MARCALA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA LA MARCA'"
-                :title="'LA MARCA'"
-                v-if="sectionSelectedIdx === -1 || sectionSelectedIdx === 0"
-                @sectionShow="onSectionSelected"
-            />
-            <about-bershka
-                :index="1"
-                :info="'CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO CONCEPTO'"
-                :title="'CONCEPTO'"
-                id="about-bershka-1"
-                v-if="sectionSelectedIdx === -1 || sectionSelectedIdx === 1"
-                @sectionShow="onSectionSelected"
-            />
-            <about-bershka
-                :index="2"
-                :info="'TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET TARGET'"
-                :title="'TARGET'"
-                id="about-bershka-2"
-                v-if="sectionSelectedIdx === -1 || sectionSelectedIdx === 2"
-                @sectionShow="onSectionSelected"
+                v-for="value of aboutBskInfo"
+                :ref="(el) => sections.push(el)"
+                :image="value.img"
+                :section-key="value.key"
+                :main-info="value.mainInfo"
+                :info="value.info"
+                :title="value.title"
+                :slogan="value.slogan"
+                @sectionShow="onSectionShow"
             />
             <marquee
-                v-if="sectionSelectedIdx === -1"
                 :text="'BSK'"
                 :isDark="true"
             />
@@ -82,12 +70,10 @@ function visibilityChange (isVisible) {
 <style lang="scss">
 .about-bsk-page {
     overflow-x: hidden;
-    .main-content {
-        padding-bottom: 40px;
-    }
-
     .offices {
         height: 110vh;
+        padding-top: 40px;
+
         &__title {
             text-align: center;
             padding-bottom: 24px;

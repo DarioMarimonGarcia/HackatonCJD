@@ -1,12 +1,26 @@
 export default {
     props: {
-        index: {
-            type: Number,
+        sectionKey: {
+            type: String,
+            required: true
+        },
+        image: {
+            type: String,
+            required: true
+        },
+        slogan: {
+            type: String,
+            required: false,
+            default: null
+        },
+        mainInfo: {
+            type: String,
             required: true
         },
         info: {
             type: String,
-            required: true
+            required: false,
+            default: null
         },
         title: {
             type: String,
@@ -18,12 +32,19 @@ export default {
 
         function onShowMore () {
             this.isMouseEnter = !this.isMouseEnter
-            this.$emit('sectionShow', this.isMouseEnter ? props.index : -1);
+            if (this.isMouseEnter) {
+                this.$emit('sectionShow', this.sectionKey);
+            }
         };
+
+        function onReset () {
+            this.isMouseEnter = false;
+        }
 
         return {
           isMouseEnter,
-          onShowMore
+          onShowMore,
+          onReset
         }
     }
 }

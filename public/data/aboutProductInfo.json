@@ -1,0 +1,31 @@
+[
+  {
+    "key": "BSK_MARCA",
+    "title": "La Marca",
+    "slogan": "Bershka nace en 1998 como nueva marca del Grupo Inditex",
+    "img": "https://static.bershka.net/4/static/itxwebstandard/images/test/company/company09.jpg?20231003082459",
+    "mainInfo": "Bershka se presenta como un punto de referencia para la moda dirigida a este público cada vez más exigente y, en tan sólo 2 años, alcanza los 100 establecimientos consolidando así su imagen de marca. Actualmente, tras 18 años, la cadena cuenta con más de 1000 tiendas en más de 70 mercados, con ventas que representan el 9% del total de ingresos de todo el grupo.",
+    "info": "Para traer siempre las últimas tendencias a la tienda, Bershka aprovecha la flexibilidad de su modelo de negocio para adaptarse a los cambios que pueden producirse durante las campañas y, de este modo, reaccionar a ellos con nuevos productos en las tiendas en el período de tiempo más breve posible. Los modelos de cada campaña son desarrollados íntegramente por sus equipos creativos, que toman como principales fuentes de inspiración tanto las tendencias de moda imperantes en el mercado como a los propios clientes, a través de la información que se recibe de las tiendas. El equipo de diseñadores de Bershka está formado por más de 60 profesionales que evalúan constantemente las necesidades, deseos y demandas de los consumidores, ofreciendo cada año más de 4000 productos diferentes en sus tiendas."
+  },
+  {
+    "key": "BSK_CONCEPTO",
+    "title": "El Concepto",
+    "slogan": "Música, pantallas, proyecciones, gráficas actuales, colores...'",
+    "img": "https://static.bershka.net/4/static/itxwebstandard/images/test/company/company05.jpg?20231003082459",
+    "mainInfo": "Música, pantallas, proyecciones, gráficas actuales, colores de moda, diseño de mobiliario contemporáneo, iluminación de ultima generación... todas estas características convierten la tienda Bershka en una Shopping experience. El interior de las tiendas está diseñado para dar la máxima relevancia a la exposición de la moda. La distribución del espacio, la música, la iluminación, el mobiliario, la gráfica y todos los materiales utilizados han sido concebidos y elegidos cuidadosamente para ofrecer la máxima libertad a sus clientes mientras descubren las últimas tendencias de la moda. Todos los elementos de la tienda los diseña el equipo de imagen de Bershka y se actualizan cada campaña. La tienda Bershka está concebida como un espacio para que los jóvenes se sientan atraídos y cómodos, convirtiendo ésta en un entretenimiento. Mientras miran, seleccionan y se prueban las prendas, pueden escuchar lo último en música y seguir las tendencias de arte urbano que representan las gráficas y sesiones fotográficas plasmadas en la decoración de los establecimientos. Bershka le da gran importancia a sus escaparates. Bershka presenta a su público las prendas más importantes de la colección y la temática predominante. Los escaparates se renuevan constantemente cada campaña y el producto se adapta a la moda del interior de las tiendas, reflejando las tendencias de toda la temporada. En el nuevo concepto de tienda Bershka ha transformado todo el espacio comercial en escaparate, dejando una amplia fachada de cristal que deja ver la tienda y la colección al completo."
+  },
+  {
+    "key": "BSK_TARGET",
+    "title": "El Taget",
+    "img": "https://static.bershka.net/4/static/itxwebstandard/images/test/company/company03.jpg?20231003082459",
+    "mainInfo": "El público de Bershka se caracteriza por ser jóvenes atrevidos, conocedores de las últimas tendencias e interesados en la música, las redes sociales y las nuevas tecnologías."
+  },
+  {
+    "key": "BSK_PRODUCTO",
+    "title": "Linea De Producto",
+    "slogan": "BSK, es la colección más joven de la marca, siempre atenta a los gustos y necesidades de este público.",
+    "img": "https://static.bershka.net/4/static/images/home/2023/0915/chica/M_slide_woman_accessories_-1.jpg?20230921020706",
+    "mainInfo": "Las tiendas poseen espacios diferenciados dedicados a las distintas líneas de producto que ofrece Bershka. En cada sección,Bershka, BSK & Hombre el producto está situado acorde con su estilo, creando un amplio espectro que va desde moda informal a deportiva y de prendas básicas a las de mayor tendencia.",
+    "info": "El área dedicada a la ropa de mujer es la más importante. Esta sección cuenta con dos líneas de producto, Bershka y BSK. La primera se centra en la moda más actual e incluye las tendencias más vanguardistas. Posee una amplia gama de moda vaquera, ropa de noche, moda informal y de última tendencia. BSK, es la colección más joven de la marca, siempre atenta a los gustos y necesidades de este público. BSK basa su colección en los gustos e intereses de este público, intereses como la música, los ídolos, estrellas de rock… La sección de hombre ofrece mucho más que moda vaquera de tendencia para los más jóvenes. Esta línea de producto ofrece también ropa informal, deportiva y de moda. Por otro lado, a parte de la amplia gama de ropa, Bershka ofrece también un amplio abanico de accesorios y calzado."
+  }
+]

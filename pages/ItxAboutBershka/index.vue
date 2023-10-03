@@ -49,7 +49,6 @@ function displayForm () {
                 :ref="(el) => sections.push(el)"
                 :image="value.img"
                 :section-key="value.key"
-                :main-info="value.mainInfo"
                 :info="value.info"
                 :title="value.title"
                 :slogan="value.slogan"

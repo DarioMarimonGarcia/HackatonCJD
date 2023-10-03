@@ -13,14 +13,9 @@ export default {
             required: false,
             default: null
         },
-        mainInfo: {
-            type: String,
-            required: true
-        },
         info: {
-            type: String,
-            required: false,
-            default: null
+            type: Array,
+            required: true
         },
         title: {
             type: String,

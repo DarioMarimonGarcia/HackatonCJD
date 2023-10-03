@@ -50,10 +50,13 @@
     display: flex;
     justify-content: center;
     font-size: 14px;
+    font-style: italic;
   }
 
-  &__info {
-    padding-top: 16px;
+  &__info-list {
+    li:not(:first-child) {
+      padding-top: 16px;
+    }
   }
 
   .title-enter-active,

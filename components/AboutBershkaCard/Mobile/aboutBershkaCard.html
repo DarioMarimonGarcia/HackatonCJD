@@ -32,15 +32,13 @@
             >
                 "{{ slogan }}"
             </span>
-            <p class="about-bsk__main-info">
-                {{ mainInfo }}
-            </p>
-            <p
-              v-if="info"
-              class="about-bsk__info"
-            >
-                {{ info }}
-            </p>
+            <ul class="about-bsk__info-list">
+                <li v-for="text of info">
+                    <p class="about-bsk__info">
+                        {{ text }}
+                    </p>
+                </li>
+            </ul>
         </div>
     </transition>
 </div>

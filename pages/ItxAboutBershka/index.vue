@@ -43,10 +43,12 @@ function onSectionShow (key) {
                 :slogan="value.slogan"
                 @sectionShow="onSectionShow"
             />
-            <marquee
-                :text="'BSK'"
-                :isDark="true"
-            />
+            <client-only>
+                <marquee
+                    :text="'BSK'"
+                    :isDark="true"
+                />
+            </client-only>
         </section>
         <section class="offices">
             <h2 class="offices__title">OFICINAS</h2>
@@ -98,7 +100,6 @@ function onSectionShow (key) {
             font-weight: 200;
         }
     }
-
 }
 
 .separator {

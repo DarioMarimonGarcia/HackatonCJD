@@ -15,9 +15,11 @@
         >
            {{ title }}
         </h2>
-        <transition name="title">
-            <a class="about-bsk__title about-bsk__bounce">&#8592;</a>
-        </transition>
+        <client-only>
+            <transition name="title">
+                <a class="about-bsk__title about-bsk__bounce">&#8592;</a>
+            </transition>
+        </client-only>
     </div>
     <transition name="slogan">
         <div v-if="isMouseEnter"

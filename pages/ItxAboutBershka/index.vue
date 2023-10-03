@@ -3,6 +3,7 @@ import { ref } from 'vue';
 import Topbar from '@/components/Topbar/index.vue';
 import AboutBershka from '~/components/AboutBershkaCard/Mobile';
 import Marquee from '@/components/Marquee/index.vue';
+import OfficesSection from '@/components/OfficesSection/index.vue';
 
 const sectionSelectedIdx = ref(-1);
 const isMainContentVisible = ref(true);
@@ -77,6 +78,7 @@ function visibilityChange (isVisible) {
                 </div>
             </div>
         </section>
+        <offices-section/>
     </div>
 </template>
 <style lang="scss">

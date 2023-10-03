@@ -28,7 +28,14 @@ function visibilityChange (isVisible) {
 
 function displayForm () {
   isFormDisplayed.value = !isFormDisplayed.value;
-  console.log('BUTTON', isFormDisplayed.value)
+  if (isFormDisplayed.value) {
+    const element = document.querySelector('.contact__form-wrapper');
+    if (element) {
+      nextTick(() => {
+        element.scrollIntoView({ behavior: "smooth" });
+      });
+    }
+  }
 }
 </script>
 <template>
@@ -95,7 +102,11 @@ function displayForm () {
             <p>De lunes a viernes de 9:00 a 18:00</p>
           </div>
           <button class="contact__display-cta" type="button" @click="displayForm">Contáctanos</button>
-          <div class="contact__form-wrapper" v-show="isFormDisplayed">
+          <div
+            v-show="isFormDisplayed"
+            class="contact__form-wrapper"
+            :class="{ 'contact__form-wrapper--visible': isFormDisplayed }"
+          >
             <form action="#" method="post" class="contact__form">
               <label for="nombre">Nombre:</label>
               <input class="contact__form-input" type="text" id="nombre" name="nombre" required><br><br>
@@ -202,6 +213,10 @@ function displayForm () {
 
   &__form-wrapper {
     margin-top: 45px;
+
+    &--visible {
+      animation: fadeOpacity 1s;
+    }
   }
 
   &__form {
@@ -214,5 +229,10 @@ function displayForm () {
       height: 24px;
     }
   }
+}
+
+@keyframes fadeOpacity {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 </style>

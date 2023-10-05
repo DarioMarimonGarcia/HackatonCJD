@@ -60,11 +60,26 @@
         <contact />
         <hr class="separator"/>
         <work-with-us/>
+        <footer class="about-bsk-page__footer">
+          <p>Web desarrollada con Nuxt3 y Vue3.</p>
+          <p>Hecho por César, Juan y Darío.</p>
+        </footer>
     </div>
 </template>
 <style lang="scss">
   .about-bsk-page {
       overflow-x: hidden;
+
+    &__footer {
+      height: 100px;
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
   }
 
   .separator {

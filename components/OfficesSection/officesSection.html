@@ -1,7 +1,51 @@
-<div class="offices-section"  @click="onShowMore">
-    <div
-    v-for="offices"
-    >
-    {{letter}}
-  </div>
-</div>
+<section class="offices">
+    <h2 class="offices__title">OFICINAS</h2>
+    <div class="offices__info-content">
+        <h4>OFICINAS CENTRALES</h4>
+        <div class="offices__direction-content">
+            <span class="offices__direction-text">Edificio Inditex</span>
+            <span class="offices__direction-text">Avenida de la Diputación s/n 15142 Arteixo, A Coruña</span>
+            <span class="offices__direction-text">España</span>
+        </div>
+        <div>
+            <ul class="offices__list">
+                <li
+                   class="offices__office-group"
+                    v-for="officeGroup of officeGroups"
+                >
+                    <h4>{{ officeGroup.title }}</h4>
+                    <ul>
+                        <li
+                            v-for="office of officeGroup.group"
+                            class="offices__office"
+                        >
+                            <span class="offices__office-name">
+                                {{ office.name }}
+                            </span>
+                            <div class="offices__direction-content">
+                        <span
+                            v-for="direction of office.direction"
+                            class="offices__direction-text"
+                        >
+                            {{ direction }}
+                        </span>
+                        <span
+                            v-if="office.phone"
+                            class="offices__direction-text offices__direction-text--phone"
+                        >
+                            T. {{ office.phone }}
+                        </span>
+                        <span
+                                v-if="office.fax"
+                                class="offices__direction-text offices__direction-text--phone"
+                        >
+                            F. {{ office.fax }}
+                        </span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

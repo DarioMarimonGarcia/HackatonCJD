@@ -1,0 +1,54 @@
+.offices {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &__list {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      width: 100%;
+      li {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  &__office {
+    width: 50%;
+  }
+
+  &__office-name {
+    font-size: 12px;
+  }
+
+  &__office-group {
+    padding-top: 20px;
+  }
+
+  &__title {
+    text-align: center;
+    padding-bottom: 24px;
+  }
+
+  &__info-content {
+    padding: 0 8px;
+  }
+
+  &__direction-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 8px;
+  }
+
+  &__direction-text {
+    font-size: 12px;
+    font-weight: 200;
+
+    &--phone {
+      padding-top: 8px;
+      text-decoration: underline;
+    }
+  }
+}

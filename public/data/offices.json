@@ -1,0 +1,61 @@
+[
+  {
+    "title": "A",
+    "group": [
+      {
+        "name": "Albania - Tirana",
+        "direction": [
+          "Kavaja Avenue,",
+          "G-Kam Business Centre,",
+          "4th Floor",
+          "Tirana-Albania"
+        ],
+        "phone": "35544504300"
+      },
+      {
+        "name": "Andorra – Andorra la Vella",
+        "direction": [
+          "Av. Meritxell, 91 - 1º",
+          "AD500 ANDORRA LA VELLA"
+        ],
+        "phone": "35544504300",
+        "fax": "376 827640"
+      },
+      {
+        "name": "Austria - Vienna",
+        "direction": [
+          "Kärntnerstrasse , 11 Top 6",
+          "1010 VIENNA"
+        ],
+        "phone": "+43 1 512 79140",
+        "fax": " +43 1 512 791433"
+      }
+    ]
+  },
+  {
+    "title": "B",
+    "group": [
+      {
+        "name": "Belgium/Luxembourg - Brussels",
+        "direction": [
+          "Rue du Marais , 49-53",
+          "1000 BRUSSELS"
+        ],
+        "phone": "32 2 2210260",
+        "fax": "32 2 2210290"
+      },
+      {
+        "name": "Bulgaria - Sofia",
+        "direction": [
+          "115 K. TSARIGRADSKO",
+          "SHOSE BLVD - OFFICE",
+          "BUILDING B – OFFICE 1.1",
+          "2ND OFFICE 1.1",
+          "1784 SOFIA"
+        ],
+        "phone": "359 (2) 8057105",
+        "fax": "32 2 2210290"
+      }
+    ]
+  }
+]

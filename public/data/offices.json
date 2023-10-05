@@ -36,15 +36,6 @@
     "title": "B",
     "group": [
       {
-        "name": "Belgium/Luxembourg - Brussels",
-        "direction": [
-          "Rue du Marais , 49-53",
-          "1000 BRUSSELS"
-        ],
-        "phone": "32 2 2210260",
-        "fax": "32 2 2210290"
-      },
-      {
         "name": "Bulgaria - Sofia",
         "direction": [
           "115 K. TSARIGRADSKO",
@@ -54,6 +45,15 @@
           "1784 SOFIA"
         ],
         "phone": "359 (2) 8057105",
+        "fax": "32 2 2210290"
+      },
+      {
+        "name": "Belgium/Luxembourg - Brussels",
+        "direction": [
+          "Rue du Marais , 49-53",
+          "1000 BRUSSELS"
+        ],
+        "phone": "32 2 2210260",
         "fax": "32 2 2210290"
       }
     ]

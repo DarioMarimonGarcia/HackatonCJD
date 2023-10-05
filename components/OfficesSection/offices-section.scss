@@ -1,5 +1,5 @@
 .offices {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 40px;
 
   &__list {
@@ -10,6 +10,7 @@
       width: 100%;
       li {
         padding-top: 20px;
+
       }
     }
   }
@@ -40,6 +41,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 8px;
+    width: 90%;
   }
 
   &__direction-text {

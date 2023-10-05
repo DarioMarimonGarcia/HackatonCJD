@@ -1,4 +1,4 @@
-<div class="about-bsk"  @click="onShowMore">
+<button class="about-bsk"  @click="onShowMore">
     <img
       class="about-bsk__main-image"
       :src="image"
@@ -10,16 +10,16 @@
       v-if="!isMouseEnter"
       class="about-bsk__more-info"
     >
-        <h2
-          class="about-bsk__title"
-        >
-           {{ title }}
-        </h2>
         <client-only>
             <transition name="title">
                 <a class="about-bsk__title about-bsk__bounce">&#8592;</a>
             </transition>
         </client-only>
+        <h2
+          class="about-bsk__title"
+        >
+           {{ title }}
+        </h2>
     </div>
     <transition name="slogan">
         <div v-if="isMouseEnter"
@@ -43,4 +43,4 @@
             </ul>
         </div>
     </transition>
-</div>
+</button>

@@ -57,5 +57,57 @@
         "fax": "32 2 2210290"
       }
     ]
+  },
+  {
+    "title": "C",
+    "group": [
+      {
+        "name": "China - Shanghai",
+        "direction": [
+          "21F ShengGao International Building - 137",
+          "XianXia Road",
+          "200051 SHANGHAI"
+        ],
+        "phone": "86 21 61611900",
+        "fax": "86 21 62289051"
+      },
+      {
+        "name": "Colombia - Bogotá",
+        "direction": [
+          "Carrera 21 # 166",
+          "53 Barrio Toberin 166",
+          "BOGOTÁ"
+        ],
+        "phone": "57 1 6672212",
+        "fax": "57 1 669311"
+      },
+      {
+        "name": "Cyprus - Nicosia",
+        "direction": [
+          "24, Solonos Street -",
+          "P.O.Box 4715",
+          "1303 NICOSI"
+        ],
+        "phone": "357 2 2761111",
+        "fax": "357, 2 2760888"
+      },
+      {
+        "name": "Croatia - Zagreb",
+        "direction": [
+          "Avenija Dubrovnik 16",
+          "10000 ZAGREB"
+        ],
+        "phone": "+385 1 6396 111"
+      },
+      {
+        "name": "Czech Republic - Prague",
+        "direction": [
+          "RYBNA 682/14",
+          "11000 PRAGUE"
+        ],
+        "phone": "+420 224 239 873",
+        "fax": "42 02 24239860"
+      }
+    ]
   }
 ]

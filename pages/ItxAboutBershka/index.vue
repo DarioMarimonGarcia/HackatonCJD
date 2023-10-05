@@ -5,6 +5,7 @@
   import Marquee from '@/components/Marquee/index.vue';
   import Contact from  '@/components/Contact/index.vue';
   import Offices from  '@/components/OfficesSection/index.vue';
+  import WorkWithUs from  '@/components/WorkWithUs/index.vue';
 
   const sections = ref([]);
   const isMainContentVisible = ref(true);
@@ -57,6 +58,8 @@
         <offices :officeGroups="dataInfo[1]"/>
         <hr class="separator"/>
         <contact />
+        <hr class="separator"/>
+        <work-with-us/>
     </div>
 </template>
 <style lang="scss">
